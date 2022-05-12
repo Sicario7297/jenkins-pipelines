@@ -1,17 +1,6 @@
 pipeline {
     agent any
     stages {       
-        stage('Prepare') {
-            steps {
-                checkout([$class: 'GitSCM',
-                branches: [[name: "master"]],
-                doGenerateSubmoduleConfigurations: false,
-                submoduleCfg: [],
-                userRemoteConfigs: [[
-                    url: 'ssh:\\git@github.com:Sicario7297/jenkins-pipelines.git']]
-                ])
-            }
-        }
         stage ('Docker_Build') {
             steps {
                 sh'''
