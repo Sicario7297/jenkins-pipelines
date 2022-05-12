@@ -1,13 +1,5 @@
 pipeline {
     agent any
-    stages {
-        stage ('Initialize') {
-      steps {
-        echo 'Placeholder.'
-      }
-    }
-  }
-    
     stages {       
         stage('Prepare') {
             steps {
@@ -57,4 +49,7 @@ pipeline {
                }
             }
         }
+    }
+}
+}
 }
