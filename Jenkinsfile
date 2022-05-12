@@ -13,7 +13,7 @@ pipeline {
                 doGenerateSubmoduleConfigurations: false,
                 submoduleCfg: [],
                 userRemoteConfigs: [[
-                    url: 'ssh:\\git@git.example.com\argocd-test\argocd-test.git']]
+                    url: 'ssh:\\git@github.com:Sicario7297/jenkins-pipelines.git']]
                 ])
             }
         }
