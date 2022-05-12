@@ -1,18 +1,7 @@
-pipeline {
-    agent any
-    stages {       
-        stage ('testing') {
-             steps {
-                     echo "Successfull"
-            }
-        }
-        stage ('pulling an image') {
-             steps {
-                     docker login -u '51c4r10' -p 'MyNameIsS1C4R10' 
-                     docker pull busybox
-                     echo "Success"
-            }
+podTemplate {
+    node(POD_LABEL) {
+        stage('Run shell') {
+            sh 'echo hello world'
         }
     }
 }
-
