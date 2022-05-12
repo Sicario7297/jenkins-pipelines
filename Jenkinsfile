@@ -6,6 +6,7 @@ pipeline {
         echo 'Placeholder.'
       }
     }
+  }
     
     stages {       
         stage('Prepare') {
