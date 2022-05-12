@@ -1,8 +1,5 @@
 pipeline {
-    agent {
-        node {
-            label 'kubernetes'
-        }
+    agent any
     }
     
     stages {       
