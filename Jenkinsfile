@@ -20,7 +20,6 @@ pipeline {
         post {
         always {
             echo 'Pipeline finished'
-            mail to: ivo.lazarov.97@gmail.com, subject: 'The Pipeline has finished'
         }
     }
     }
