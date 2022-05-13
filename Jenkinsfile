@@ -17,10 +17,5 @@ pipeline {
                         url: 'https://github.com/Sicario7297/docker-test.git'
             }
         }
-        post {
-        always {
-            echo 'Pipeline finished'
-        }
-    }
     }
 }
