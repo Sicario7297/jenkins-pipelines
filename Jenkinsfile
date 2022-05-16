@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Testing connectivity to ArgoCD') {
             steps {
-                echo "ArgoCD testing"
+                docker build -t .
             }
         }
     }
