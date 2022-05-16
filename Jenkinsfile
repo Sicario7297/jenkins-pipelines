@@ -64,7 +64,7 @@ spec:
   stages {
     stage('Build') {
       environment {
-        DOCKERHUB_CREDS = credentials('dockerhub')
+        registryCredential = 'dockerhub_id'
       }
       steps {
         container('docker') {
