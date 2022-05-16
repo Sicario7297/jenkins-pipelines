@@ -62,10 +62,10 @@ spec:
      // DOCKERHUB_CREDS = credentials("MyNameIsS1C4R10")
   }
   stages {
-      environment {
-          DOCKERHUB_CREDS = credentials ('MyNameIsS1C4R10')
-      }
     stage('Build') {
+      environment {
+        DOCKERHUB_CREDS = credentials('dockerhub')
+      }
       steps {
         container('docker') {
           sh "echo ${env.GIT_COMMIT}"
