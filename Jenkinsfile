@@ -59,12 +59,10 @@ spec:
   environment {
       IMAGE_REPO = "51c4r10/rsvp"
       // Instead of DOCKERHUB_USER, use your Dockerhub name
+      DOCKERHUB_CREDS = credentials("MyNameIsS1C4R10")
   }
   stages {
     stage('Build') {
-      environment {
-        DOCKERHUB_CREDS = credentials("MyNameIsS1C4R10")
-      }
       steps {
         container('docker') {
           sh "echo ${env.GIT_COMMIT}"
