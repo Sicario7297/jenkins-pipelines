@@ -62,6 +62,9 @@ spec:
      // DOCKERHUB_CREDS = credentials("MyNameIsS1C4R10")
   }
   stages {
+      environment {
+          DOCKERHUB_CREDS = credentials ('MyNameIsS1C4R10')
+      }
     stage('Build') {
       steps {
         container('docker') {
