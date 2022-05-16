@@ -17,5 +17,10 @@ pipeline {
                         url: 'https://github.com/Sicario7297/docker-test.git'
             }
         }
+        stage('Testing connectivity to ArgoCD') {
+            steps {
+                echo "ArgoCD"
+            }
+        }
     }
 }
