@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Source') {
       steps {
-        git 'https://github.com/digitalvarys/jenkins-tutorials.git''
+        git 'https://github.com/digitalvarys/jenkins-tutorials.git'
       }
     }
     stage('Compile') {
