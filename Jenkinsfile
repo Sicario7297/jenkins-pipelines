@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'node-1' }
+  agent { label 'kubeagent' }
   stages {
     stage('Source') {
       steps {
