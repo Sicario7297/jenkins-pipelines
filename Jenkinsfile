@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Compile') {
       tools {
-        gradle 'Default'
+        gradle 'gradle7'
       }
       steps {
         sh 'gradle clean compileJava test'
